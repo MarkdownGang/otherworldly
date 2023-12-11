@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "otherworldly",
+	"version": "${version}",
+	"name": "Example mod",
+	"description": "The void is not empty...",
+	"authors": [
+		"ColossalRenders",
+		"*"
+	],
+	"contact": {
+		"homepage": "*",
+		"sources": "*"
+	},
+	"license": "MIT",
+	"icon": "assets/otherworldly/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.otherworldly.Otherworldly"
+		],
+		"client": [
+			"com.otherworldly.OtherworldlyClient"
+		]
+	},
+	"mixins": [
+		"otherworldly.mixins.json",
+		{
+			"config": "otherworldly.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
