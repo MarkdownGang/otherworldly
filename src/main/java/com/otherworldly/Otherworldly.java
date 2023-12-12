@@ -5,11 +5,14 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.otherworldly.item.OtherworldlyItems;
+
 public class Otherworldly implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
     public static final Logger LOGGER = LoggerFactory.getLogger("otherworldly");
+	public static final String MOD_ID = "otherworldly";
 
 	@Override
 	public void onInitialize() {
@@ -18,5 +21,7 @@ public class Otherworldly implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Init Otherworldly");
+
+		OtherworldlyItems.registerItems();
 	}
 }
