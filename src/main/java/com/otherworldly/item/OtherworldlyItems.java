@@ -19,6 +19,6 @@ public class OtherworldlyItems {
     public static void registerItems(){
         Otherworldly.LOGGER.debug("Registering items for Otherworldly");
     }
-
+//e
 }
 
